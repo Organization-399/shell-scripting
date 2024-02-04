@@ -8,8 +8,8 @@ RUN apt-get update && \
     curl \
     jq
 
-COPY pull_requests.sh /usr/local/bin/pull_requests.sh
+COPY Open_pull_req.sh /usr/local/bin/Open_pull_req.sh
 
-RUN chmod +x /usr/local/bin/pull_requests.sh
+RUN chmod +x /usr/local/bin/Open_pull_req.sh
 
-ENTRYPOINT ["/usr/local/bin/pull_requests.sh"]
+ENTRYPOINT ["/usr/local/bin/Open_pull_req.sh"]
